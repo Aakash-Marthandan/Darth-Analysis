@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-As1_data = np.genfromtxt('pre_primary_school_data.csv', delimiter=',', skip_header = 1, usecols = (12, 13, 14, 15))
+As1_data = np.genfromtxt('As1_pre_primary_school_data.csv', delimiter=',', skip_header = 1, usecols = (12, 13, 14, 15))
 print(*As1_data)
 for i in range(105):
     if As1_data[i, 0] > 0:
