@@ -9,7 +9,7 @@ UP_data = np.array                                          # creating a new num
 UP_data = np.vstack([As2_UP['TotalVillage'], As2_UP['TotalODFVillage']])          # isolating just the columns needed - total villages and ODF villages
 UP = []                                                     # new array to store the fractional values
 l = len(UP_data[0])
-for i in range(l)                                           # loop to compute the fractional value and store it in UP (if the fraction is defined)
+for i in range(l):                                           # loop to compute the fractional value and store it in UP (if the fraction is defined)
     if UP_data[1,i] !=0:
         UP.append(UP_data[1,i]/UP_data[0,i])
     else:
