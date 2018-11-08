@@ -13,10 +13,13 @@ import seaborn as sns
 from scipy.interpolate import spline
 
 def darkmatterfunction(x):
-    if  x<15 or x>25:
+    if  x<5 or x>25:
        return 0
-    else:
+
+    else if x>15:
        return sigma*20*(25-x)
+    else:
+       return sigma*20*(x-5)
 
 def backgroundrate(x):
     return 1000*(math.exp(-x/10))
